@@ -12,7 +12,7 @@ JavaScript, Node.js e MySql.
 
 Dependências do projeto:
 
-1 - cors (Aceitar requisições de outros domínios)
-2 - dotenv (Trabalhar com as variáveis de ambiente)
-3 - express (Servidor, criar e gerenciar rotas através dos verbos http)
-4 - mysql2 (Conectar e executar consultas no banco de dados)
+* cors (Aceitar requisições de outros domínios)
+* dotenv (Trabalhar com as variáveis de ambiente)
+* express (Servidor, criar e gerenciar rotas através dos verbos http)
+* mysql2 (Conectar e executar consultas no banco de dados)
