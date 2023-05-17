@@ -1,6 +1,6 @@
 # Todo-list
 
-Lista de tarefa com CRUD básico, com regras simples.
+Lista de tarefa com CRUD básico e regras simples.
 
 **Front-end**
 
