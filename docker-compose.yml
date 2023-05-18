@@ -1,0 +1,28 @@
+version: '3.6'
+
+
+services:
+  db:
+    image: "mysql:5.7"
+    container_name: mysql
+    restart: always
+    volumes:
+      - ./mysql:/var/lib/mysql   
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=todolist
+      - MYSQL_ROOT_HOST=%
+    ports:
+      - "3306:3306"
+    expose:
+      - 3306
+    extra_hosts:
+    - "host.docker.internal:172.17.0.1"
+
+  todolist:
+    image: "todolist:latest"
+    container_name: todolist
+    build: ./beckend
+    restart: "on-failure:10"
+    links:
+      - db
