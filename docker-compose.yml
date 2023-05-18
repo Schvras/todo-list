@@ -16,8 +16,6 @@ services:
       - "3306:3306"
     expose:
       - 3306
-    extra_hosts:
-    - "host.docker.internal:172.17.0.1"
 
   todolist:
     image: "todolist:latest"
